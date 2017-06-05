@@ -1,4 +1,7 @@
-#Keep a fork up to date
+#GIT Cheatsheet
+
+##Keep fork up-to-date
+
 ###1. Clone your fork:
 
     git clone git@github.com:YOUR-USERNAME/YOUR-FORKED-REPO.git
@@ -12,3 +15,16 @@
 ###3. Updating your fork from original repo to keep up with their changes:
 
     git pull upstream master
+
+##Change source of PR
+###1. Rename original PR branch
+    git checkout my-branch
+    git branch -m original-my-branch
+    git push origin original-my-branch
+
+###2. Rename new PR branch
+    git checkout other-branch
+    git branch -m my-branch
+    git push origin my-branch -f
+
+###3. Refresh PR
